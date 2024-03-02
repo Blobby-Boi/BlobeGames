@@ -3,8 +3,22 @@
 <head>
   <title>Button Move Down</title>
   <style>
+  body {
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   .container {
     display: flex;
+    flex-direction: column; /* Align buttons in columns */
+    align-items: center; /* Center buttons horizontally */
+    margin-bottom: 50px; /* Add margin between rows of buttons */
+  }
+  .row {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally within each row */
   }
   .rounded-button {
     border-radius: 40px;
@@ -13,7 +27,8 @@
     background-size: contain;
     width: 250px;
     height: 256px;
-    margin-right: 10px; /* Add some space between buttons */
+    margin-right: 50px; /* Increased space between buttons */
+    margin-bottom: 20px; /* Add margin between buttons within each row */
 
     /* Change border color on hover with transition */
     &:hover {
@@ -33,10 +48,24 @@
 </head>
 <body>
   <div class="container">
-    <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-    <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-    <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-    <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+    <div class="row">
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+    </div>
+    <div class="row">
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+    </div>
+    <div class="row">
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+    </div>
   </div>
 </body>
 </html>
