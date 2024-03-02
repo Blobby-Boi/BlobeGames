@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Move Down</title>
+  <style>
+  .container {
+    display: flex;
+  }
+  .rounded-button {
+    border-radius: 40px;
+    border: 10px solid black;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/010/353/285/original/colourful-google-logo-on-white-background-free-vector.jpg');
+    background-size: contain;
+    width: 250px;
+    height: 256px;
+    margin-right: 10px; /* Add some space between buttons */
+
+    /* Change border color on hover with transition */
+    &:hover {
+      border-color: red;
+      transform: scale(1.1);
+      transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    /* Change border color back to black on exit with transition */
+    &:not(hover) {
+      border-color: grey;
+      transform: scale(1);
+      transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+    <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+    <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+    <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+  </div>
+</body>
+</html>
