@@ -5,17 +5,19 @@
   <style>
   body {
     margin: 0;
+    text-align: center; /* Center all content horizontally */
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
   }
   .container {
     display: flex;
     flex-direction: column; /* Align buttons in columns */
     align-items: center; /* Center buttons horizontally */
     margin-bottom: 50px; /* Add margin between rows of buttons */
-    margin-top: 300px; /* Move buttons down by 300px */
+    margin-top: 75px; /* Move buttons down by 75px */
+    position: relative;
   }
   .row {
     display: flex;
@@ -45,9 +47,35 @@
       transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
     }
   }
+
+  /* Style for the navigation buttons */
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto; /* Center navigation buttons horizontally */
+  }
+
+  .navigation-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Style for the top image */
+  .top-image {
+    width: 80%; /* Adjust the width as needed */
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+  }
   </style>
 </head>
 <body>
+  <!-- Top image -->
+  <img src="https://raw.githubusercontent.com/Blobby-Boi/BlobeGames/main/games/p1.png" alt="Top Image" class="top-image">
+
   <div class="container">
     <div class="row">
       <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
@@ -55,18 +83,26 @@
       <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
       <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
     </div>
-    <div class="row">
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-    </div>
-    <div class="row">
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-    </div>
+    <!-- Add more rows as needed -->
   </div>
+
+  <!-- Navigation buttons -->
+  <div class="navigation-buttons">
+    <button class="navigation-button" onclick="previousPage()">Previous Page</button>
+    <button class="navigation-button" onclick="nextPage()">Next Page</button>
+  </div>
+
+  <script>
+    // JavaScript functions for navigation buttons
+    function previousPage() {
+      // Implement logic to navigate to the previous page
+      // Example: window.location.href = 'previous_page_url';
+    }
+
+    function nextPage() {
+      // Implement logic to navigate to the next page
+      // Example: window.location.href = 'next_page_url';
+    }
+  </script>
 </body>
 </html>
