@@ -10,6 +10,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Source Code Pro", monospace; /* Set font to Source Code Pro */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
   }
   .container {
     display: flex;
@@ -24,9 +27,8 @@
     justify-content: center; /* Center buttons horizontally within each row */
   }
   .rounded-button {
-    border-radius: 40px;
+    border-radius: 40px; /* Set border radius to 40px for all buttons except navigation buttons */
     border: 10px solid black;
-    background-image: url('https://raw.githubusercontent.com/Blobby-Boi/BlobeGames/main/games/p1.png');
     background-size: contain;
     width: 250px;
     height: 256px;
@@ -57,28 +59,43 @@
   }
 
   .navigation-button {
-    padding: 15px 30px; /* Adjust button padding */
-    background-color: #4CAF50; /* Green */
-    border: none;
-    border-radius: 5px;
+    padding: 20px 40px; /* Increased padding for bigger buttons */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White border */
+    border-radius: 20px; /* Make buttons more rounded */
     cursor: pointer;
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 28px; /* Increased font size for bigger buttons */
     transition-duration: 0.4s;
+    font-family: "Source Code Pro", monospace; /* Set font to Source Code Pro */
   }
 
   .navigation-button:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
   }
 
   /* Style for the top image */
   .top-image {
-    width: 100%; /* Adjust the width to fit the screen */
+    width: 80%; /* Adjust the width as needed */
     height: auto;
-    margin-bottom: -10px; /* Crop the bottom pixels */
+    margin: -20px auto 0; /* Crop bottom pixels by moving image up */
+  }
+
+  /* Style for the text under buttons */
+  .button-text {
+    font-family: "Source Code Pro", monospace; /* Set font to Source Code Pro */
+    font-size: 20px; /* Set font size to 20px */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Add top margin to separate text from buttons */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center horizontally */
+    flex-grow: 1; /* Ensure the text occupies the same space as the button */
+    margin-left: -45px; /* Move text 45px to the left */
   }
   </style>
 </head>
@@ -88,31 +105,30 @@
 
   <div class="container">
     <div class="row">
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
-      <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button"></button>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Button 1</p>
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image2.jpg');"></button>
+        <p class="button-text">Button 2</p>
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image3.jpg');"></button>
+        <p class="button-text">Button 3</p>
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image4.jpg');"></button>
+        <p class="button-text">Button 4</p>
+      </div>
     </div>
     <!-- Add more rows as needed -->
   </div>
 
   <!-- Navigation buttons -->
   <div class="navigation-buttons">
-    <button class="navigation-button" onclick="previousPage()">Previous Page</button>
-    <button class="navigation-button" onclick="nextPage()">Next Page</button>
+    <button class="navigation-button" onclick="window.open('previous_page_url', '_blank')">Previous Page</button>
+    <button class="navigation-button" onclick="window.open('next_page_url', '_blank')">Next Page</button>
   </div>
-
-  <script>
-    // JavaScript functions for navigation buttons
-    function previousPage() {
-      // Implement logic to navigate to the previous page
-      // Example: window.location.href = 'previous_page_url';
-    }
-
-    function nextPage() {
-      // Implement logic to navigate to the next page
-      // Example: window.location.href = 'next_page_url';
-    }
-  </script>
 </body>
 </html>
