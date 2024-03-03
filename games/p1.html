@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Button Move Down</title>
+  <title>Page 1</title>
   <style>
   body {
     margin: 0;
@@ -34,20 +34,19 @@
     height: 256px;
     margin-right: 50px; /* Increased space between buttons */
     margin-bottom: 20px; /* Add margin between buttons within each row */
+    transition: transform 0.3s, border-color 0.3s; /* Add transition effect */
 
-    /* Change border color on hover with transition */
-    &:hover {
-      border-color: red;
-      transform: scale(1.1);
-      transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-    }
+    /* Move the button 100px to the right */
+    transform: translateX(25px);
 
-    /* Change border color back to black on exit with transition */
-    &:not(hover) {
-      border-color: grey;
-      transform: scale(1);
-      transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-    }
+    /* Change border color to grey */
+    border-color: grey;
+  }
+
+  /* Grow and change border color on hover */
+  .rounded-button:hover {
+    border-color: red;
+    transform: translateX(25px) scale(1.1);
   }
 
   /* Style for the navigation buttons */
@@ -61,7 +60,7 @@
   .navigation-button {
     padding: 20px 40px; /* Increased padding for bigger buttons */
     background-color: transparent; /* Transparent background */
-    border: 2px solid white; /* White border */
+    border: 2px solid white; /* White outline */
     border-radius: 20px; /* Make buttons more rounded */
     cursor: pointer;
     color: white;
@@ -95,7 +94,6 @@
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: center; /* Center horizontally */
     flex-grow: 1; /* Ensure the text occupies the same space as the button */
-    margin-left: -45px; /* Move text 45px to the left */
   }
   </style>
 </head>
