@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Games - Page 2</title>
+  <style>
+  body {
+    margin: 0;
+    text-align: center; /* Center all content horizontally */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Source Code Pro", monospace; /* Set font to Source Code Pro */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+  }
+  .container {
+    display: flex;
+    flex-direction: column; /* Align buttons in columns */
+    align-items: center; /* Center buttons horizontally */
+    margin-bottom: 50px; /* Add margin between rows of buttons */
+    margin-top: 75px; /* Move buttons down by 75px */
+    position: relative;
+  }
+  .row {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally within each row */
+  }
+  .rounded-button {
+    border-radius: 40px; /* Set border radius to 40px for all buttons except navigation buttons */
+    border: 10px solid black;
+    background-size: contain;
+    width: 250px;
+    height: 250px;
+    margin-right: 50px; /* Increased space between buttons */
+    margin-bottom: 20px; /* Add margin between buttons within each row */
+    transition: transform 0.3s, border-color 0.3s; /* Add transition effect */
+
+    /* Move the button 100px to the right */
+    transform: translateX(25px);
+
+    /* Change border color to grey */
+    border-color: grey;
+  }
+
+  /* Grow and change border color on hover */
+  .rounded-button:hover {
+    border-color: red;
+    transform: translateX(25px) scale(1.1);
+  }
+
+  /* Style for the navigation buttons */
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 25px; /* Center navigation buttons horizontally */
+  }
+
+  .navigation-button {
+    padding: 20px 40px; /* Increased padding for bigger buttons */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White outline */
+    border-radius: 20px; /* Make buttons more rounded */
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px; /* Increased font size for bigger buttons */
+    transition-duration: 0.4s;
+    font-family: "Source Code Pro", monospace; /* Set font to Source Code Pro */
+  }
+
+  .navigation-button:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+  }
+
+  /* Style for the top image */
+  .top-image {
+    width: 80%; /* Adjust the width as needed */
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Style for the text under buttons */
+  .button-text {
+    font-family: "Source Code Pro", monospace; /* Set font to Source Code Pro */
+    font-size: 20px; /* Set font size to 20px */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Add top margin to separate text from buttons */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center horizontally */
+    flex-grow: 1; /* Ensure the text occupies the same space as the button */
+    color: white; /* Set text color to white */
+  }
+
+  /* Additional text style */
+  .additional-text {
+    color: green; /* Set text color to green */
+    font-size: 16px; /* Set font size to 16px */
+  }
+  </style>
+</head>
+<body>
+  <!-- Top image -->
+  <img src="https://raw.githubusercontent.com/Blobby-Boi/BlobeGames/main/games/p2.png" alt="Top Image" class="top-image">
+
+  <div class="container">
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://sites.google.com/view/edu-blobe/games/temple-run', '_blank');" class="rounded-button" style="background-image: url('https://github.com/Blobby-Boi/BlobeGames/blob/main/assets/images/templerun%20logo.jpeg?raw=true');"></button>
+        <p class="button-text">Temple Run</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Red Ball 4</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Plants VS Zombies</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">BLOONS</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Friday Night Funkin'</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Time Shooter</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Top Speed Racing 3D</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Shards Breakout</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Mario</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Sonic the Hedgehog</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">The Legend of Zelda</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Doom</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Metroid</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Bullet Bill 3</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Gigga.io</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Sam Hogan</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">SuperHot Prototype</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Candy Crush</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Tomb of the Mask</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Repuls.io</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Cluster Rush</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Breakout (Bookmarklet)</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">MooMoo.io</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Super Hexagon</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Tube Jumpers</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Monkey Mart</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Granny (Horror Game)</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Sports Random</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Idle Breakout</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Hamu Breakout</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Handlum+</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Riddle School</p>
+        <p class="additional-text">MULTI-GAMES</p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <div class="row">
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">10 is Again</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Ragdoll.io</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Jetpack Joyride</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <div>
+        <button type="button" onclick="window.open('https://example.com', '_blank');" class="rounded-button" style="background-image: url('https://example.com/image1.jpg');"></button>
+        <p class="button-text">Choppy Orc</p>
+        <p class="additional-text"></p> <!-- Additional text below button -->
+      </div>
+      <!-- Add similar code for other buttons -->
+    </div>
+    <!-- Add more rows as needed -->
+  </div>
+
+  <!-- Navigation buttons -->
+  <div class="navigation-buttons">
+    <button class="navigation-button" onclick="window.open('previous_page_url', '_blank')">Previous Page</button>
+    <button class="navigation-button" onclick="window.open('next_page_url', '_blank')">Next Page</button>
+  </div>
+</body>
+</html>
