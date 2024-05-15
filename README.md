@@ -1,2 +1,2 @@
 # My game site!
-## https://sites.google.com/view/edu-blobe/
+## https://sites.google.com/view/edu-blob/
